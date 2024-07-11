@@ -1,0 +1,67 @@
+/camera/camera:
+  ros__parameters:
+    base_frame_id: link
+    camera_name: camera
+    color_info_qos: DEFAULT
+    color_qos: SYSTEM_DEFAULT
+    colorizer:
+      color_scheme: 0
+      enable: false
+      frames_queue_size: 16
+      histogram_equalization_enabled: true
+      max_distance: 6.0
+      min_distance: 0.0
+      stream_filter: 1
+      stream_format_filter: 1
+      stream_index_filter: -1
+      visual_preset: 0
+    decimation_filter:
+      enable: true
+      filter_magnitude: 2
+      frames_queue_size: 16
+      stream_filter: 1
+      stream_format_filter: 1
+      stream_index_filter: -1
+    depth_info_qos: DEFAULT
+    depth_qos: SYSTEM_DEFAULT
+    diagnostics_period: 0.0
+    disparity_filter:
+      enable: true
+    disparity_to_depth:
+      enable: true
+    enable_color: true
+    enable_depth: true
+    filter_by_sequence_id:
+      enable: false
+      frames_queue_size: 16
+      sequence_id: 1
+    hole_filling_filter:
+      enable: true
+      frames_queue_size: 16
+      holes_fill: 0
+      stream_filter: 1
+      stream_format_filter: 1
+      stream_index_filter: -1
+    initial_reset: false
+    publish_odom_tf: true
+    publish_tf: true
+    reconnect_timeout: 6.0
+    spatial_filter:
+      enable: true
+      filter_magnitude: 2
+      filter_smooth_alpha: 0.5
+      filter_smooth_delta: 20
+      frames_queue_size: 16
+      holes_fill: 0
+      stream_filter: 1
+      stream_format_filter: 1
+      stream_index_filter: -1
+    temporal_filter:
+      enable: true
+      filter_smooth_alpha: 0.40
+      filter_smooth_delta: 20
+      frames_queue_size: 16
+      holes_fill: 3
+      stream_filter: 1
+      stream_format_filter: 1
+      stream_index_filter: -1
